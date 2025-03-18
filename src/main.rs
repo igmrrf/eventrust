@@ -140,7 +140,7 @@ async fn main() {
     }
 
     // Wait 50 seconds and emit another high priority event
-    sleep(Duration::from_secs(20)).await;
+    sleep(Duration::from_secs(50)).await;
     for i in 20..30 {
         let manager = event_manager.clone();
         tokio::spawn(async move {
